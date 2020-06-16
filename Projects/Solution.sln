@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleProject", "SampleProj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleProjectTest", "SampleProject\Test\SampleProjectTest.vcxproj", "{4F001397-F187-4FEB-B060-519656DC2417}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoreLib", "..\Submodules\ExternalRepoA\Projects\CoreLib\CoreLib.vcxproj", "{2A116FFB-1D4E-423C-B5D0-DCB150A1FBCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{4F001397-F187-4FEB-B060-519656DC2417}.Debug|x64.Build.0 = Debug|x64
 		{4F001397-F187-4FEB-B060-519656DC2417}.Release|x64.ActiveCfg = Release|x64
 		{4F001397-F187-4FEB-B060-519656DC2417}.Release|x64.Build.0 = Release|x64
+		{2A116FFB-1D4E-423C-B5D0-DCB150A1FBCE}.Debug|x64.ActiveCfg = Debug|x64
+		{2A116FFB-1D4E-423C-B5D0-DCB150A1FBCE}.Debug|x64.Build.0 = Debug|x64
+		{2A116FFB-1D4E-423C-B5D0-DCB150A1FBCE}.Release|x64.ActiveCfg = Release|x64
+		{2A116FFB-1D4E-423C-B5D0-DCB150A1FBCE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
