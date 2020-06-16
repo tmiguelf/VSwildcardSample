@@ -41,13 +41,8 @@
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup Condition="'$(DesignTimeBuild)' != 'true'">
-    <!--
-		Adds all files from original project into this project
-		It ensures that all of the dll's internal code is visible to the test
-		and we still get a dll.
-    -->
-    <ClCompile Include="../src/**/*.cpp" />
+  <ItemGroup>
+    <_WildCardClCompile Include="../src/**/*.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SampleProjectTest.cpp" />

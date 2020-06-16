@@ -6,4 +6,10 @@
 		<Import Project="$(VCTargetsPath)Microsoft.Cpp.targets" />
 	</ImportGroup>
 
+	<Target Name="AddWildCardItems" AfterTargets="BuildGenerateSources">
+		<ItemGroup>
+			<ClCompile Include="@(_WildCardClCompile)" />
+		</ItemGroup>
+	</Target>
+
 </Project>
