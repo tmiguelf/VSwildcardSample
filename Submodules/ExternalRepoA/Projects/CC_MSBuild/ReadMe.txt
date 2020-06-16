@@ -1,0 +1,2 @@
+This is where all default properties and custom target modifications are set up for all projects in the entire company.
+This is how we ensure that all project settings are compatible with eachother, this is what makes the project ecosystem work.

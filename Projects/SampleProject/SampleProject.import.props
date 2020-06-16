@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ProjectReference Include="$(MSBuildThisFileDirectory)SampleProject.vcxproj">
+			<Project>{0679e3d7-bd0e-4e17-8118-650c4f39b5aa}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ImportGroup Label="PropertySheets">
+		<Import Project="$(MSBuildThisFileDirectory)SampleProject.include.props" />
+	</ImportGroup>
+</Project>

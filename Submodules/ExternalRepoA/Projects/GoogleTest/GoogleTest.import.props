@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+		</ClCompile>
+		<Link>
+			<AdditionalLibraryDirectories>$(MSBuildThisFileDirectory)lib\$(PlatformTarget)\$(BuildType);%(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
+		</Link>
+		<Link Condition="'$(BuildType)|$(Platform)'=='Release|x64'" >
+			<AdditionalDependencies>gtest_main.lib;gtest.lib;gmock_main.lib;gmock.lib;%(AdditionalDependencies);</AdditionalDependencies>
+		</Link>
+		<Link Condition="'$(BuildType)|$(Platform)'=='Debug|x64'" >
+			<AdditionalDependencies>gtest_maind.lib;gtestd.lib;gmock_maind.lib;gmockd.lib;%(AdditionalDependencies);</AdditionalDependencies>
+		</Link>
+	</ItemDefinitionGroup>
+</Project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!--
+		This will allow projects from this repository to be found.
+		Projects can move about.
+	-->
+
+	<PropertyGroup Label="UserMacros">
+		<SampleProjectPath>$(MSBuildThisFileDirectory)Projects/SampleProject/</SampleProjectPath>
+	</PropertyGroup>
+</Project>
